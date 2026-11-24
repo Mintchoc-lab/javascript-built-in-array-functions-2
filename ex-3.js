@@ -374,4 +374,21 @@ const bills = [
 ];
 
 // Start coding here
-const billMembers;
+
+// โจทย์ต้องการเห็นเฉพาะชื่อสมาชิก 
+// กรองเฉพาะรายการที่มีสมาชิกแล้ว bill.member !== null 
+// ใช้.filter.().map()
+// เข้าถึงชื่อ bills.member.name
+
+
+
+
+
+const findMember = (bill) => bill.member !== null;
+
+const memberNames = bills
+  .filter(findMember)
+  .map((bill) => bill.member.name);
+
+console.log(memberNames);
+

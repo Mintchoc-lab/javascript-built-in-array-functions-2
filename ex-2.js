@@ -375,4 +375,12 @@ const bills = [
 
 // Start coding here
 
-const newBills;
+// โจทย์ให้ตัด member เป็น null ออก
+// เลือกเฉพาะรายการสั่งซื้อสินค้าที่มีข้อมูลสมาชิกเท่านั้น ใช้ .filter()
+// เช็กเงื่อนไข bill.member !== null
+
+
+const findMemeber = (bill) => bill.member !== null;
+
+const newBills = bills.filter(findMemeber) ;
+console.log(newBills);
