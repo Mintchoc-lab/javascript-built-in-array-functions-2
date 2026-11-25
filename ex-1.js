@@ -374,3 +374,21 @@ const bills = [
 ];
 
 // Start coding here
+
+//โจทย์ ให้หายอดชำระรวมทั้งหมดใน bills โดยใช้ Built-in Array Function
+// เมื่อโปรแกรมทำงานสำเร็จ ควรจะแสดงผลลัพธ์ทางหน้าจอแบบนี้
+// "Total bill transaction is 1410083";
+
+// ใช้ .reduce()
+// ใช้ bill.total
+// Template Literal (${})
+
+
+const calculateTotalBill = (acc,cur) => 
+      acc + cur.total;
+  
+let TotalBill = bills.reduce(calculateTotalBill,0);
+console.log(`Total bill transaction is ${TotalBill}`);
+
+  
+
